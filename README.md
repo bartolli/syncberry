@@ -21,16 +21,18 @@ Make sure you are equipped with the following:
 
 ### Instructional Overview
 
-1. **Clone the Repository**: 
+1. **Clone the Repository**:
 
-   `git clone https://github.com/bartolli/syncberry.git`
+   ```bash
+   git clone https://github.com/bartolli/syncberry.git
+   ```
 
 2. **Set Up Virtual Environment**: 
 
    Create a Python virtual environment named `.venv` in your project directory. You can do that in VS Code or PyCharm
    Activate the virtual environment and install `python-dateutil` with the following commands:
 
-   ```
+   ```bash
    source .venv/bin/activate
    pip install python-dateutil
    ```
