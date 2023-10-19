@@ -1,24 +1,22 @@
-## SyncBerry
+### SyncBerry
 
 SyncBerry is a two-way calendar synchronization script designed specifically for macOS users. Crafted in AppleScript, it serves as a bridge between two distinct Apple Calendars, ensuring both are always up-to-date. Leveraging Python and the python-dateutil library, SyncBerry provides accurate handling of recurring events through RRULE parsing.
 
-## Features
+The script designates one calendar as the 'source' and the other as the 'destination,' reversing these roles for bi-directional synchronization. Before duplicating events, it removes prior script-generated entries by scanning the 'location' field for a unique ParentID. This ensures source integrity while enabling precise synchronization. Roles are then reversed to complete the two-way sync.
+
+### Features
 - Two-way synchronization between Apple Calendars
 - Support for both single and recurring events
 - Python-assisted RRULE parsing for nuanced recurrence patterns
 - Customizable time window for synchronization
 
-## How it works
-The SyncBerry script designates one calendar as the 'source' and the other as the 'destination,' reversing these roles for bi-directional synchronization. Before duplicating events, it removes prior script-generated entries by scanning the 'location' field for a unique ParentID. This ensures source integrity while enabling precise synchronization. Roles are then reversed to complete the two-way sync.
 
-## Installation
-
-### Prerequisites
-Before you embark on the SyncBerry journey, arm yourself with:
+### Installation
+Make sure you are equipped with the following:
 
 - macOS Catalina or later
 - Python 3.x
-- AppleScript
+- AppleScript :-)
 - JSON Helper (AppleScript Library)
 
 ### Step-by-Step Guide
