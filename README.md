@@ -54,7 +54,7 @@ property pythonScriptPath : "/your_path/syncberry/vscode/shell.sh"
 - `timeScopeDays`: The time scope, in days, for which the script should sync events. Configured by default to encompass a 14-day span: 7 days prior and 7 days forthcoming.
 - `pythonScriptPath`: The full path to the shell script which activates your Python virtual environment.
 
-Note: Before diving in, create two new calendars specifically for testing. Confirm the script operates as intended. This ensures a safeguard for your existing schedules.
+**Note**: Before diving in, create two new calendars specifically for testing. Confirm the script operates as intended. This ensures a safeguard for your existing schedules.
 
 #### Shell Script Configuration
 
