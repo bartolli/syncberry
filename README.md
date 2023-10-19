@@ -19,7 +19,7 @@ Make sure you are equipped with the following:
 - AppleScript :-)
 - JSON Helper (AppleScript Library)
 
-### Step-by-Step Guide
+### Instructional Overview
 
 1. **Clone the Repository**: 
     `git clone https://github.com/bartolli/syncberry.git`
