@@ -22,7 +22,7 @@ Make sure you are equipped with the following:
 ### Step-by-Step Guide
 
 1. **Clone the Repository**: 
-    `git clone https://github.com/yourusername/syncberry.git`
+    `git clone https://github.com/bartolli/syncberry.git`
 2. **Set Up Virtual Environment**: 
     - Create a Python virtual environment named `.venv` in your project directory. You can do that in VS Code or PyCharm
     - Activate the virtual environment and install `python-dateutil` with the following commands:
