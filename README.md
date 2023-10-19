@@ -22,14 +22,19 @@ Make sure you are equipped with the following:
 ### Instructional Overview
 
 1. **Clone the Repository**: 
-    `git clone https://github.com/bartolli/syncberry.git`
+
+   `git clone https://github.com/bartolli/syncberry.git`
+
 2. **Set Up Virtual Environment**: 
+
    Create a Python virtual environment named `.venv` in your project directory. You can do that in VS Code or PyCharm
    Activate the virtual environment and install `python-dateutil` with the following commands:
+
    ```
-    source .venv/bin/activate
-    pip install python-dateutil
+   source .venv/bin/activate
+   pip install python-dateutil
    ```
+
 3. **Shell Script Permissions**: Make `shell.sh` executable. Run `chmod +x shell.sh` in the terminal. This script is your liaison to the Python virtual environment and is called each time RRULEs need parsing. 
 4. **Script Permissions**: Once everything is set up, launch the script using Apple's Script Editor and execute it for the initial run. The script will request permission to access your Calendar and employ JSON Helper.
 5. **Run SyncBerry**: With the preliminary configuration complete, execute 'osascript syncberry.applescript' to initiate the synchronization process. To automate this operation or convert it into a standalone application, consider using Automator.
