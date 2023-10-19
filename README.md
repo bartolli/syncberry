@@ -8,6 +8,9 @@ SyncBerry is a two-way calendar synchronization script designed specifically for
 - Python-assisted RRULE parsing for nuanced recurrence patterns
 - Customizable time window for synchronization
 
+## How it works
+The SyncBerry script designates one calendar as the 'source' and the other as the 'destination,' reversing these roles for bi-directional synchronization. Before duplicating events, it removes prior script-generated entries by scanning the 'location' field for a unique ParentID. This ensures source integrity while enabling precise synchronization. Roles are then reversed to complete the two-way sync.
+
 ## Installation
 
 ### Prerequisites
@@ -20,9 +23,10 @@ Before you embark on the SyncBerry journey, arm yourself with:
 
 ### Step-by-Step Guide
 
-1. **Clone the Repository**: `git clone https://github.com/yourusername/syncberry.git`
+1. **Clone the Repository**: 
+    `git clone https://github.com/yourusername/syncberry.git`
 2. **Set Up Virtual Environment**: 
-    - Create a Python virtual environment named `.venv` in your project directory.
+    - Create a Python virtual environment named `.venv` in your project directory. You can do that in VS Code or PyCharm
     - Activate the virtual environment and install `python-dateutil` with the following commands:
       ```
       source .venv/bin/activate
@@ -47,11 +51,12 @@ property calendarBName : "Familie"
 property timeScopeDays : 14
 property pythonScriptPath : "/your_path/syncberry/vscode/shell.sh"
 ```
-
 - `calendarAName`: The name of the first calendar you wish to sync.
 - `calendarBName`: The name of the second calendar you wish to sync.
 - `timeScopeDays`: The time scope, in days, for which the script should sync events. Configured by default to encompass a 14-day span: 7 days prior and 7 days forthcoming.
 - `pythonScriptPath`: The full path to the shell script which activates your Python virtual environment.
+
+Note: Before diving in, create two new calendars specifically for testing. Confirm the script operates as intended. This ensures a safeguard for your existing schedules.
 
 #### Shell Script Configuration
 
